@@ -31,7 +31,7 @@ describe('Wishlist tests', function() {
 	cy.searchGartment('es', 'corbatas')
     cy.modifyWishlistItemsFromProductList(0, 'add')
 	cy.checkWishlistItemNbr(1)
-    cy.login("es", "mgn_test_regression@mango.com", "mango123")
+    cy.login("es", ${user}, ${password})
 	cy.url().should('include', '/favorites.faces')
 	cy.checkWishlistItemNbr(1)
 
@@ -46,7 +46,7 @@ describe('Wishlist tests', function() {
     cy.checkWishlistItemNbr(0)
 
 	// test postprocessing
-	cy.login("es", "mgn_test_regression@mango.com", "mango123")
+	cy.login("es", ${user}, ${password})
 	cy.deleteFavorites()
 	cy.logout()
   })
