@@ -1,0 +1,21 @@
+{
+  "name": "ui_test_suite",
+  "version": "1.0.0",
+  "description": "cypress playground",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://jira.mangodev.net/stash/scm/qa/cypress.git"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^3.1.5"
+  }
+}
